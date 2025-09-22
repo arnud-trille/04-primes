@@ -3,11 +3,13 @@ from math import sqrt
 #### Fonction secondaire
 
 
-def isprime(p):
-
-    # votre code ici
-
-    pass
+def isprime(n):
+    if n==1:
+        return(False)
+    for k in range (2,int(sqrt(n)+1)):
+        if n%k==0:
+            return(False)
+    return(True)
 
 #### Fonction principale
 
